@@ -1,44 +1,26 @@
 # Data Documentation
 
-## Primary Dataset
+## Project Purpose
+Predict water potability based on physical and chemical water quality measurements.
 
-Source:
-[dataset URL]
-
-Licence:
-[licence information]
-
-Original Record Count:
-[number]
-
-## Target
-
-Target variable:
-[what you are predicting/classifying]
+## Primary Labelled Dataset
+- **Dataset:** Water Potability
+- **Source:** <URL to your dataset or source paper>
+- **Licence:** MIT (or your dataset's license)
+- **Downloaded File:** water_potability_balanced.csv
+- **Source Records:** 2,556
+- **Target:** Potability (0 = Not potable, 1 = Potable)
 
 ## Input Fields
-
-- Field 1
-- Field 2
-- Field 3
-- ...
-
-## Units
-
-- Field 1: unit
-- Field 2: unit
-- ...
-
-## Limitations
-
-[limitations of the dataset]
+- `ph`: pH value (0–14)
+- `Hardness`: Capacity of water to precipitate soap (mg/L)
+- `Solids`: Total dissolved solids (ppm)
+- `Chloramines`: Chloramines concentration (ppm)
+- `Sulfate`: Dissolved sulfate (mg/L)
+- `Conductivity`: Electrical conductivity (μS/cm)
+- `Organic_carbon`: Organic carbon content (ppm)
+- `Trihalomethanes`: Trihalomethanes amount (μg/L)
+- `Turbidity`: Measure of water clarity (NTU)
 
 ## Step 2 Plan
-
-1. Load raw data
-2. Inspect data
-3. Clean data
-4. Validate data
-5. Split data
-6. Save processed data
-7. Document results
+Clean missing values via median imputation, drop duplicates, validate value ranges, and create reproducible stratified train/validation/test splits.
