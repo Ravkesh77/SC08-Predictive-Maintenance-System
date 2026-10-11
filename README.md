@@ -1,1 +1,0 @@
-# SC08-Predictive-Maintenance-System
